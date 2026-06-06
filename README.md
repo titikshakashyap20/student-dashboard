@@ -32,3 +32,7 @@ The main challenge was debugging a Supabase RLS policy that was blocking all rea
 ## Environment Variables
 
 See `.env.example` for required variables.
+
+## Live Demo
+
+https://student-dashboard-ten-ruddy.vercel.app/
