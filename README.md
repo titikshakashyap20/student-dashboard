@@ -27,7 +27,7 @@ Suspense/loading is handled via `app/loading.tsx` which shows skeleton loaders w
 
 ## Challenges
 
-The main challenge was debugging a Supabase RLS policy that was blocking all reads. Disabling RLS for the courses table fixed it. Also had to handle the table name casing issue (Courses vs courses) in the query.
+The main challenge was debugging a Supabase RLS policy that was blocking all reads. Disabling RLS for the courses table fixed it. Figuring out the server vs client component split took some time. I kept getting errors because I was trying to use Framer Motion in server components, which don't support browser APIs. I had to move animations to separate client components and keep the data fetching in the server component.
 
 ## Environment Variables
 
